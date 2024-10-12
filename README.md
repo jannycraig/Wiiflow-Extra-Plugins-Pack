@@ -13,6 +13,7 @@ Each mod has also been made to work with Tetsuo Shima's Rhapsodii Shima Mod.
 
 # Why this mod exists
 It's a pretty good question. There are a lot of mods that are often left behind, or aren't as popular as the rest (or just down right horrendous like DeSmuME Wii). However, some people like myself find value in such... shit. In 2012, Abz created the Wiiflow 4 Masterpiece Pack containing plugins for... pretty much everything under the sun. Some of these plugins are still the only way to boot these types of files in Wiiflow. Unfortunately, the Wiiflow Plugins Pack by Tetsuo does not contain or support some of these emulators, or support was stopped, like the DS, where older versions of the pack still contain it, however it isn't supported in the latest version anymore. My goal was to bring back these forgotten plugins, which can be supported with the latest versions of these mods.
+(ok ngl i just wanted to play touhou on my wii)
 
 # Installation
 ## Emulators:
