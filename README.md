@@ -67,10 +67,10 @@ Coming Soon
 
 # Credits:
 
-Tetsuo - Rhapsodii Shima, Wiiflow Plugins Pack
-Abz - Wiiflow 4 Masterpiece Pack
-Wiimpathy - PC-Neko Project II Wiiflow Plugin
-Yui - Neko Project II
-MPlayer CE Team - MPlayer CE
-MagoDX - SFX
-Myself, あ3J - Custom Graphics
+- Tetsuo - Rhapsodii Shima, Wiiflow Plugins Pack
+- Abz - Wiiflow 4 Masterpiece Pack
+- Wiimpathy - PC-Neko Project II Wiiflow Plugin
+- Yui - Neko Project II
+- MPlayer CE Team - MPlayer CE
+- MagoDX - SFX
+- Myself, あ3J - Custom Graphics
