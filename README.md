@@ -66,6 +66,16 @@ Coming Soon
 
 Coming Soon
 
+# Auto Installer:
+
+The auto installer can be used to install this automatically.
+
+## Changelog:
+
+### v1.0 Beta:
+- Auto installer is released
+- Only supports Rhapsodii Shima and Rhapsodii install option
+
 # Credits:
 
 - Tetsuo - Rhapsodii Shima, Wiiflow Plugins Pack

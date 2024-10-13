@@ -1,0 +1,117 @@
+######################################################
+NP2(Neko Project II) NEC PC-9801 Emulator for Wii
+######################################################
+
+http://wiibrew.org/wiki/Neko_Project_II
+
+#Introduction
+This emulator is a port to Wii of NP2 (Neko Project II),
+ NEC PC-9801 emulator, programmed by Yui.
+The policy of this port is the minumum change.
+You must not ask Yui about this wii version.
+
+original (no including wii) NP2 site (only in Japanese):
+http://www.retropc.net/yui/np2.html
+
+#Features
+-Wiimote, Classic, and Gamecube controllers
+-resume
+-USB-mouse & USB-keyboard
+-snapshot (bmp or gif) at Other-menu
+-state save & load (five) at Other-menu
+
+#Requirements
+USB-keyboard (may be able to execute all solo-play games without USB-Keyboard by editing /np2/np2.cfg)
+
+#How to set up
+1) Copy the contens in the HBC directory to your SD/SDHC card or USB.
+2) Copy game roms files (ex., .d88 (.D88 is OK, too)) to np2 directory.
+
+#How to use
+The on-off of the main menu is toggled by pressing wiimote plus button 
+ when pointing monitor.
+Select the FDD1->Open menu, and select a game.
+Next, slect the Emulate->Reset menu.
+
+If you read in Japanese, check the following site.
+http://www.retropc.net/yui/np2help.html
+
+#Controls
+Vertical wiimote (when poiting monitor)
+ +: menu on/off (=F11 key)
+ -: (=End key)
+ A: select menu item (=mouse left button)
+ B: (=mouse right button)
+ Home: Quit
+
+Horizontal wiimote [default]
+Wiimote, Classic, Gamecube: key, name in quasi88.cfg
+ CROSS, CROSS, CROSS: Allow keys, wpad_button_up, down, left, and right
+        stick, stick
+ 1    ,     B,     B: Space , wpad_button_1
+ 2    ,     A,     A: Return, wpad_button_2
+ +    ,     Y,     Y: z     , wpad_button_plus
+ -    ,     X,     X: x     , wpad_button_minus
+ B    ,      ,      : Escape, wpad_button_b
+                    :       , wpad_button_a
+   ,full left, trigger left:   Left Shift, wpad_button_fleft
+   ,full right,trigger right: Right Shift, wpad_button_fright
+ Home ,  Home, START: (Quit)
+
+In vertical mode, you can see the system setup menu when you reset np2 with holding pressing wiimote minus button.
+But the language of the system setup menu is Japanese because the messages are originated from PC-9801.
+
+See the graphical information of contros in
+http://wiibrew.org/wiki/Neko_Project_II
+
+You can configurate the allocations from keyboard keys to wiimote buttons by editing /np2/np2.cfg file (no user interface).
+If you want to change the allocations, change the numbers of wpad_button_? (?=a, b, plus, minus, 1, 2, right, left, down, up, fleft, and fright) according to the numbers in key_numnerlist.txt file.
+
+#Known issues 
+1) When running for the first time, this emulator will automatically convert the true-type font (default.ttf), sazanami free font, to font.tmp. This conversion makes you wait for several minutes.
+But, once it has completed the conversion, this emulator does not make you wait. If you want to use another font, delete /np2/font.tmp and /np2/default.ttf, and copy your favorite true-type font to /np2 directory as 'default.ttf'. 
+2) The game roms can be selected only in /np2/.(Because of libfat .....,and my poor programming ability ;-)
+3) The bottom of screen is black (640x80).
+(Bacause SDL library support the popular size (640x480) perfectly,
+ but NEC traditional size (640x400) maybe be not well supported.)
+
+#Others
+np21.dol: Please guess what this executable file is. The np21 emulates 80386 CPU while the np emulates 80286 CPU. The np21 may execute some games that cannot be exuecuted by np2. 
+
+#Brief Change Log
+%Aug. 28, 2011, ver. 0.83 beta6
+ Increase samples number in sound library of SDL (maybe better sound)
+%Aug. 14, 2011, ver. 0.83 beta5
+ Recompile with recent devkitPPC and libogc
+ More stable mount for ISO58 usb2 fast access
+%Aug. 15, 2010, ver. 0.83 beta4
+ Recompile for recent HBC1.0.8 and recenet libogc (I don't know using IOS58 for USB2)
+%Jan. 04, 2010, ver. 0.83 beta3
+ Support USB storage
+ Fix some paths
+%Nov. 07, 2009, ver. 0.83 beta2
+ Recompile by devkitPPC-r19 and libfreetype2.3.11 (sources are not changed)
+%Oct. 18, 2009, ver. 0.83 beta1
+ Recompile by SDL-Wii-r81
+ Support play by Classic & Gamecube controllers
+ Improve selecting disk-file
+%Oct.  7, 2009 ver. 0.83 alpha7
+ Some minor changes
+%Oct.  2, 2009 ver. 0.83 alpha6
+ Support states save & load
+ Support snapshot (bmp and gif)
+%Sep. 26, 2009 ver. 0.83 alpha5
+ Based on ver. 0.83 core
+ Compile np21 (maybe 9821 emulator)
+%Sep. 19, 2009 ver. 0.81a alpha5
+ Can change allocations from keyboard keys to wiimote buttons 
+%Sep. 11, 2009 ver. 0.81a alpha4
+ Allocate som keybord keys to wiimote buttons
+%Sep.  4, 2009 ver. 0.81a alpha3
+ Manipulation of the menu by wiimote instead of USB-mouse
+%Sep.  2, 2009 ver. 0.81a alpha2
+ Recompile for no use of Japanese message in the menu
+%Sep.  1, 2009 ver. 0.81a alpha1
+ Initial release
+
+
